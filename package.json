@@ -1,0 +1,17 @@
+{
+    "name": "perpustakaan23",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "description": "Aplikasi Perpustakaan 23",
+    "author": "Ahmad",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "axios": "^1.6.4",
+        "laravel-vite-plugin": "^1.0",
+        "vite": "^8.0.12"
+    }
+}
