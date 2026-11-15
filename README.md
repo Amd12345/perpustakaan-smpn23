@@ -61,13 +61,4 @@ Kredensial admin bisa diubah lewat `ADMIN_USERNAME` dan `ADMIN_PASSWORD` di `.en
 - Buku yang di-import dengan judul sama akan **menambah stok**, bukan membuat duplikat.
 - `APP_TIMEZONE=Asia/Jakarta` — dipakai perhitungan denda harian.
 
-## Catatan
 
-- PHP 8.5: konstanta PDO spesifik driver (`PDO::MYSQL_ATTR_SSL_CA`) di-depresiasi,
-  bentuk barunya `Pdo\Mysql::ATTR_SSL_CA`. `config/database.php` dan
-  `vendor/laravel/framework/config/database.php` sudah disesuaikan memakai pola
-  `defined()` agar tetap jalan di PHP 8.2+. Patch pada file `vendor` akan tertimpa
-  saat `composer update` — Laravel 11 tidak akan memperbaikinya (security-fixes-only),
-  perbaikan resmi baru ada di Laravel 12.40+.
-- `npm install` butuh `--legacy-peer-deps` karena `laravel-vite-plugin` 1.3.0
-  belum mengaku peer range Vite 8.
